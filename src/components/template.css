@@ -1,0 +1,129 @@
+.page {
+ /* display: flex;
+  justify-content: center;*/
+  background-color: #bbb;
+}
+.template-body {
+  /* width: 900px; */
+  background-color: #fff;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 200px 500px;
+  grid-template-areas: "left right";
+  padding: 15px 10px;
+}
+i {
+  margin-right: 10px;
+}
+
+/* Left Section */
+.left {
+  grid-area: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #d3d9fb;
+}
+.left .photo {
+  width: 150px;
+  height: 150px;
+  margin: 20px 0 50px;
+  border-radius: 50%;
+  background-color: #3e3240;
+  background-image: url(../img/Layer_13.png);
+  background-size: 130px, 130px, contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.left .sec {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.left .sec-title {
+  margin-top: 0;
+  border-bottom: 2px solid #3e3240;
+}
+
+.left .skills p {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.left .languages .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 1px;
+  background-color: #3e3240;
+}
+.left .languages .lang {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "name rate";
+}
+.left .languages .lang .lang-name {
+  grid-area: name;
+}
+.left .languages .lang .lang-rate {
+  grid-area: rate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right Section */
+.right {
+  grid-area: right;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  /* edit */
+  border: 8px solid #d3d9fb;
+  padding: 20px 30px;
+}
+.right .main {
+  padding: 10px 20px;
+}
+
+.right .main-sec {
+  border-left: 5px solid #3e3240;
+  padding-left: 30px;
+  position: relative;
+}
+.right .main-sec i {
+  border: 2px solid #3e3240;
+  border-radius: 50%;
+  padding: 10px;
+  left: 0;
+  top: 0;
+  transform: translate(-55%, -20%);
+  background-color: #fff;
+  position: absolute;
+}
+.right .main-sec .sec-title {
+  background-color: #d3d9fb;
+  color: #3e3240;
+}
+.right .main-sec .sec-body {
+  color: #3e3240;
+  padding: 10px 20px;
+}
+
+.right .sec-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.right .sec-body p,
+.right .sec-title h3 {
+  margin: 0;
+}

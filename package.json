@@ -1,0 +1,81 @@
+{
+    "name": "cvBuilder",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://we4cv.com",
+    "dependencies": {
+        "@date-io/moment": "1.3.13",
+        "@material-ui/core": "^4.11.2",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.57",
+        "@material-ui/pickers": "^3.2.10",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "@tinymce/tinymce-react": "^3.6.0",
+        "animate.css": "^4.1.0",
+        "aos": "^2.3.4",
+        "axios": "^0.19.2",
+        "create-react-class": "^15.6.3",
+        "date-fns": "^2.19.0",
+        "emailjs-com": "^2.6.4",
+        "formik": "^2.1.4",
+        "formik-material-fields": "0.0.6",
+        "formik-material-ui": "^3.0.1",
+        "history": "^5.0.0",
+        "hover.css": "^2.3.2",
+        "i18next": "^19.8.4",
+        "i18next-browser-languagedetector": "^6.0.1",
+        "immutability-helper": "^3.1.1",
+        "jss-rtl": "^0.3.0",
+        "moment": "2.24.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-animate-on-scroll": "^2.1.5",
+        "react-beautiful-dnd": "^13.0.0",
+        "react-component-export-image": "^1.0.5",
+        "react-countdown": "^2.2.1",
+        "react-countdown-circle-timer": "^2.2.2",
+        "react-dom": "^16.13.1",
+        "react-fade-in": "^1.1.0",
+        "react-html-parser": "^2.0.2",
+        "react-i18next": "^11.8.4",
+        "react-player": "^2.0.1",
+        "react-redux": "^7.2.2",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.1",
+        "react-scroll-up-button": "^1.6.4",
+        "react-sortable-hoc": "^1.11.0",
+        "react-to-pdf": "0.0.13",
+        "react-year-picker": "^0.3.7",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^5.1.0",
+        "styled-loaders-react": "^1.1.0",
+        "timer-countdown": "^0.2.6",
+        "tinymce": "^5.4.1",
+        "use-force-update": "^1.0.7",
+        "yup": "^0.28.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

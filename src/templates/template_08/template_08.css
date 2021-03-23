@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "beIN Normal";
+  src: url("../../assets/fonts/beINNormal.eot");
+  src: url("../../assets/fonts/beINNormal.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/beINNormal.woff2") format("woff2"),
+    url("../../assets/fonts/beINNormal.woff") format("woff"),
+    url("../../assets/fonts/beINNormal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "beIN";
+  src: url("../../assets/fonts/beINBlack.eot");
+  src: url("../../assets/fonts/beINBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/beINBlack.woff2") format("woff2"),
+    url("../../assets/fonts/beINBlack.woff") format("woff"),
+    url("../../assets/fonts/beINBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ara Assaf";
+  src: url("../../assets/fonts/AraAssaf-Regular.eot");
+  src: url("../../assets/fonts/AraAssaf-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/AraAssaf-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/AraAssaf-Regular.woff") format("woff"),
+    url("../../assets/fonts/AraAssaf-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --t08-bg-color: #f8f8f8;
+  --t08-sec-bg-color: #fff;
+  --t08-sec-title-color: #fdfdfd;
+  --t08-sec-title-bg-color: #717475;
+  --t08-sec-logo-bg-color: #f6de46;
+  --t08-name-color: #4a4b4c;
+  --t08-circle-color: #575b5d;
+  --t08-skill-border-color: #f5dd45;
+  --t08-info-text-color: #575b5d;
+
+  --t08-scale-rate: 0.3;
+  --t08-p-scale-rate: 0.9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Template Body */
+.template08-body {
+  background-color: var(--t08-bg-color);
+  padding: calc(80px * var(--t08-scale-rate)) calc(30px * var(--t08-scale-rate))
+    calc(80px * var(--t08-scale-rate));
+  width: calc(2480px * var(--t08-scale-rate));
+  height: calc(3508px * var(--t08-scale-rate));
+  position: relative;
+  margin: 0 auto;
+}
+.template08-body p {
+  margin-bottom: 0;
+  font-family: "beIN Normal";
+  line-height: 1.5;
+}
+.template08-body .bold,
+.template08-body .bold p {
+  font-family: "beIN";
+}
+.template08-body p.ar {
+  word-spacing: 2px;
+}
+
+/* #region General styles for all sections */
+/* #region - English */
+.template08-body .t08-row-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: calc(35px * var(--t08-scale-rate));
+}
+.template08-body .t08-sec {
+  width: 48%;
+  padding-right: 0;
+  padding-left: calc(100px * var(--t08-scale-rate));
+  position: relative;
+}
+.template08-body .t08-sec .t08-sec-title {
+  background-color: var(--t08-sec-title-bg-color);
+  width: calc(600px * var(--t08-scale-rate));
+  height: calc(104px * var(--t08-scale-rate));
+  border-top-right-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0;
+  padding-left: calc(50px * var(--t08-scale-rate));
+}
+.template08-body .t08-sec .t08-sec-title p {
+  color: var(--t08-sec-title-color);
+  font-size: calc(19px * var(--t08-p-scale-rate));
+  font-family: "beIN";
+}
+.template08-body .t08-sec .t08-sec-logo {
+  border: calc(4.167px * var(--t08-scale-rate)) solid #000;
+  background-color: var(--t08-sec-logo-bg-color);
+  border-radius: 50%;
+  width: calc(156px * var(--t08-scale-rate));
+  height: calc(156px * var(--t08-scale-rate));
+  position: absolute;
+  top: calc(-30px * var(--t08-scale-rate));
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.template08-body .t08-sec .t08-sec-body {
+  background-color: var(--t08-sec-bg-color);
+  padding-top: calc(10px * var(--t08-scale-rate));
+  padding-bottom: calc(10px * var(--t08-scale-rate));
+  padding-left: calc(5px * var(--t08-scale-rate));
+  padding-right: calc(5px * var(--t08-scale-rate));
+  width: 100%;
+  font-size: calc(15px * var(--t08-p-scale-rate));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: left;
+}
+.template08-body .t08-sec .t08-sec-body .t08-sec-content {
+  display: grid;
+  grid-template-columns: calc(80px * var(--t08-scale-rate)) 1fr;
+  grid-template-areas: "content-circle content-text";
+  margin-bottom: calc(20px * var(--t08-scale-rate));
+}
+.template08-body .t08-sec .t08-sec-body .t08-sec-content .t08-content-circle {
+  grid-area: content-circle;
+  display: flex;
+  justify-content: center;
+  padding-top: calc(18px * var(--t08-scale-rate));
+}
+.template08-body
+  .t08-sec
+  .t08-sec-body
+  .t08-sec-content
+  .t08-content-circle
+  .t08-circle {
+  background-color: var(--t08-circle-color);
+  width: calc(24px * var(--t08-scale-rate));
+  height: calc(24px * var(--t08-scale-rate));
+  border-radius: 50%;
+}
+.template08-body .t08-sec .t08-sec-body .t08-sec-content .t08-content-text {
+  grid-area: content-text;
+}
+/* #endregion - English */
+/* #region - Arabic */
+.template08-body .t08-sec.ar {
+  direction: rtl;
+  padding-left: 0;
+  padding-right: calc(100px * var(--t08-scale-rate));
+}
+.template08-body .t08-sec .t08-sec-title.ar {
+  padding-left: 0;
+  padding-right: calc(50px * var(--t08-scale-rate));
+  border-top-left-radius: 15%;
+}
+.template08-body .t08-sec .t08-sec-logo.ar {
+  right: calc(20px * var(--t08-scale-rate));
+}
+.template08-body .t08-sec .t08-sec-body.ar {
+  font-family: "beIN Normal";
+  line-height: 1.5;
+  text-align: right;
+}
+/* #endregion - Arabic */
+/* #endregion */
+
+/* #region - Name Section */
+.template08-body .t08-name-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: calc(50px * var(--t08-scale-rate));
+}
+.template08-body .t08-name-sec h1 {
+  color: var(--t08-name-color);
+  font-size: calc(34px * var(--t08-p-scale-rate));
+  font-style: italic;
+  font-family: "Ara Assaf";
+  line-height: 1.2;
+}
+/* #endregion */
+
+/* #region - Header Section */
+.template08-body .t08-header-sec {
+  color: var(--t08-info-text-color);
+}
+.template08-body .t08-header-sec .t08-world {
+  position: absolute;
+  left: 52%;
+  transform: translateX(-52%);
+}
+.template08-body .t08-header-sec .t08-world img {
+  width: calc(800px * var(--t08-scale-rate));
+}
+.template08-body .t08-header-sec .t08-detail img {
+  width: calc(129px * var(--t08-scale-rate));
+  height: calc(73px * var(--t08-scale-rate));
+}
+.template08-body .t08-header-sec .t08-detail-1 {
+  position: absolute;
+  left: 27%;
+  transform: translateX(-27%);
+}
+.template08-body .t08-header-sec .t08-detail-2 {
+  position: absolute;
+  left: 41.5%;
+  transform: translateX(-41.5%);
+}
+.template08-body .t08-header-sec .t08-detail-3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.template08-body .t08-header-sec .t08-detail-4 {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-60%);
+}
+.template08-body .t08-header-sec .t08-detail-5 {
+  position: absolute;
+  left: 74%;
+  transform: translateX(-74%);
+}
+.template08-body .t08-header-sec .t08-detail {
+  font-family: "beIN Normal";
+  line-height: 1;
+  font-size: calc(16px * var(--t08-p-scale-rate));
+  z-index: 15;
+}
+.template08-body .t08-header-sec .t08-detail.ar {
+  line-height: 1.5;
+  font-size: calc(10pt * var(--t08-p-scale-rate));
+}
+/* #endregion */
+
+/* #region - Info Section */
+.template08-body .t08-info-sec {
+  padding: 0 calc(50px * var(--t08-scale-rate));
+  margin-bottom: calc(30px * var(--t08-scale-rate));
+  font-family: "beIN Normal";
+}
+.template08-body .t08-info-sec.ar {
+  direction: rtl;
+}
+.template08-body .t08-info-sec .t08-info {
+  display: grid;
+  grid-template-columns: calc(150px * var(--t08-scale-rate)) 1fr;
+  grid-template-areas: "info-logo info-text";
+  padding-bottom: calc(25px * var(--t08-scale-rate));
+}
+.template08-body .t08-info-sec .t08-info-logo {
+  grid-area: info-logo;
+  display: flex;
+  align-items: center;
+}
+.template08-body .t08-info-sec .t08-info-logo-1 img {
+  width: calc(83px * var(--t08-scale-rate));
+  height: calc(83px * var(--t08-scale-rate));
+}
+.template08-body .t08-info-sec .t08-info-logo-2 img {
+  width: calc(91px * var(--t08-scale-rate));
+  height: calc(64px * var(--t08-scale-rate));
+}
+.template08-body .t08-info-sec .t08-info-logo-3 img {
+  width: calc(85px * var(--t08-scale-rate));
+  height: calc(78px * var(--t08-scale-rate));
+}
+.template08-body .t08-info-sec .t08-info-logo-4 img {
+  width: calc(87px * var(--t08-scale-rate));
+  height: calc(75px * var(--t08-scale-rate));
+}
+.template08-body .t08-info-sec .t08-info-text {
+  grid-area: info-text;
+  display: flex;
+  align-items: center;
+}
+.template08-body .t08-info-sec .t08-info-text p {
+  color: var(--t08-info-text-color);
+  font-size: calc(14px * var(--t08-p-scale-rate));
+}
+/* #endregion */
+
+/* #region - Career Objective Section */
+.template08-body .t08-objective-sec .t08-sec-logo img {
+  width: calc(119px * var(--t08-scale-rate));
+  height: calc(122px * var(--t08-scale-rate));
+}
+/* #endregion */
+
+/* #region - Education Section */
+.template08-body .t08-edu-sec .t08-sec-logo img {
+  width: calc(126px * var(--t08-scale-rate));
+  height: calc(87px * var(--t08-scale-rate));
+}
+/* #endregion */
+
+/* #region - Work Section */
+.template08-body .t08-work-sec .t08-sec-logo img {
+  width: calc(103px * var(--t08-scale-rate));
+  height: calc(103px * var(--t08-scale-rate));
+}
+/* #endregion */
+
+/* #region - Courses Section */
+.template08-body .t08-course-sec .t08-sec-logo img {
+  width: calc(115px * var(--t08-scale-rate));
+  height: calc(115px * var(--t08-scale-rate));
+}
+/* #endregion */
+
+/* #region - skills Section */
+.template08-body .t08-skill-sec .t08-sec-logo img {
+  width: calc(130px * var(--t08-scale-rate));
+  height: calc(127px * var(--t08-scale-rate));
+}
+.template08-body .t08-skill-sec .t08-sec-body {
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(50px * var(--t08-scale-rate));
+}
+/* .template08-body .t08-skill-sec .t08-sec-body.ar {
+  font-family: "Ahlan World Arbfonts";
+} */
+.template08-body .t08-skill-sec .t08-skill {
+  width: calc(230px * var(--t08-scale-rate));
+  height: calc(300px * var(--t08-scale-rate));
+  display: grid;
+  grid-template-rows: calc(200px * var(--t08-scale-rate)) 1fr;
+  grid-template-areas: "skill-logo" "skill-name";
+}
+/* skill -> logo */
+.template08-body .t08-skill-sec .t08-skill .t08-skill-logo {
+  grid-area: skill-logo;
+  display: flex;
+  justify-content: center;
+}
+.template08-body .t08-skill-sec .t08-skill .t08-skill-logo-bg {
+  width: calc(170px * var(--t08-scale-rate));
+  height: calc(170px * var(--t08-scale-rate));
+  border-radius: 50%;
+  background-color: inherit;
+  border: 1px solid var(--t08-skill-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.template08-body .t08-skill-sec .t08-skill .t08-skill-logo-bg img {
+  width: calc(115px * var(--t08-scale-rate));
+  height: calc(107px * var(--t08-scale-rate));
+}
+/* skill -> name */
+.template08-body .t08-skill-sec .t08-skill .t08-skill-name {
+  grid-area: skill-name;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.template08-body .t08-skill-sec .t08-skill .t08-skill-name p {
+  font-size: calc(12px * var(--t08-p-scale-rate));
+  line-height: 1;
+}
+/* #endregion */
+
+/* #region - Languages Section */
+.template08-body .t08-lang-sec .t08-sec-logo img {
+  width: calc(106px * var(--t08-scale-rate));
+  height: calc(109px * var(--t08-scale-rate));
+}
+.template08-body .t08-lang-sec .t08-sec-body {
+  align-items: flex-start;
+}
+/* .template08-body .lang-sec .sec-body.ar {
+  font-family: "Ahlan World Arbfonts";
+} */
+.template08-body .t08-lang-sec .t08-sec-body .t08-lang {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "lang-name lang-rate";
+  margin-bottom: calc(30px * var(--t08-scale-rate));
+}
+.template08-body .t08-lang-sec .t08-sec-body .t08-lang .t08-lang-name {
+  grid-area: lang-name;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(14px * var(--t08-p-scale-rate));
+}
+.template08-body .t08-lang-sec .t08-sec-body .t08-lang .t08-lang-rate {
+  grid-area: lang-rate;
+  display: flex;
+  align-items: center;
+}
+.template08-body .t08-lang-sec .t08-sec-body .t08-lang .t08-lang-rate img {
+  width: calc(54px * var(--t08-scale-rate));
+  height: calc(50px * var(--t08-scale-rate));
+}
+/* #endregion */
